@@ -5,9 +5,11 @@ import Product from './Product'
 const ProductItem = ({ product, onAddToCartClicked }) => (
   <div className="product-container"style={{ marginBottom: 20 }}>
     <Product
+      image={product.image}
       title={product.title}
       price={product.price}
-      inventory={product.inventory} />
+      inventory={product.inventory}
+       />
     <button
       onClick={onAddToCartClicked}
       disabled={product.inventory > 0 ? '' : 'disabled'}>
@@ -18,6 +20,7 @@ const ProductItem = ({ product, onAddToCartClicked }) => (
 
 ProductItem.propTypes = {
   product: PropTypes.shape({
+    image:PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     inventory: PropTypes.number.isRequired

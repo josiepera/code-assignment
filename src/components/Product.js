@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Product = ({ price, inventory, title }) => (
+const Product = ({ image, price, inventory, title }) => (
   <div>
+    <img src={image} alt={title}/>
 
     <div className="card-title">
       <h4>
@@ -20,6 +21,7 @@ const Product = ({ price, inventory, title }) => (
 )
 
 Product.propTypes = {
+  image: PropTypes.string,
   price: PropTypes.number,
   inventory: PropTypes.number,
   title: PropTypes.string
