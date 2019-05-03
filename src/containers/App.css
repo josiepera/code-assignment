@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+
 /* *{
   border: 1px solid black;
 } */
 body, html{
   background-color: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+
 }
 .container{
   display: flex;
@@ -47,13 +54,40 @@ img{
 }
 .card-title h4{
   margin: 10px 0px;
+  color: #505050;
+  font-size: 25px;
 }
 .price{
   margin: 10px 0px;
+  color:#898a8e;
 }
 .amount{
   margin: 10px 0px;
+  color:#898a8e;
 }
+
+
+button{
+  width: 100px;
+  background-color: #5E97D1;
+  border-radius: 20px;
+  color: white;
+  padding: 4px 10px 4px 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover{
+  background-color: #407FC0;
+  color:white;
+}
+button:focus {
+  outline:0;
+}
+
+a { color: inherit; }
+
+
 
 @media screen and (max-width: 890px){
   .container{
