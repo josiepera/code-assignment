@@ -2,19 +2,21 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Product = ({ image, price, inventory, title }) => (
-  <div>
-    <img src={image} alt={title}/>
+  <div className="product">
+    
 
-    <div className="card-title">
-      <h4>
-        {title}
-      </h4>
-      <div className="price">
-       &#36;{price}
+    <div>
+      <div className="card-title">
+        <h4>
+          {title}
+        </h4>
+        <div className="price">
+         &#36;{price}
+        </div>
       </div>
-    </div>
-    <div className="amount">
-     {inventory ? `${inventory} ` : null} Remaining
+      <div className="amount">
+       {inventory ? `${inventory} ` : null} Remaining
+      </div>
     </div>
 
   </div>
