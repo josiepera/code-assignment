@@ -5,25 +5,36 @@ import PropTypes from 'prop-types'
 import Product from '../components/Product'
 import './App.css';
 
-const App = () => {
+class App extends React.Component{
 
+  state={
+    show:false
+  }
 
-  return (
-  <div>
-    <div className="page-title">
-      <h2>Acme Store</h2>
-      <div className="shopping-cart">
-        <img src="https://i.imgur.com/WYXwWfJ.png" alt="cart"/>
+  toggleInfo = () => {
+    this.setState(prevState => ({
+      show: !prevState.show
+    }));
+  }
 
-      </div>
-    </div>
+  render(){
 
-    <hr/>
-    <ProductsContainer />
-    <hr/>
-    <CartContainer/>
-  </div>
-)
+      return (
+        <div>
+          <div className="page-title">
+            <h2>Acme Store</h2>
+            <div className="shopping-cart">
+              <a href="#openCart"><img src="https://i.imgur.com/WYXwWfJ.png" alt="cart"/></a>
+              <CartContainer/>
+            </div>
+          </div>
+
+          <hr/>
+          <ProductsContainer />
+          <hr/>
+        </div>
+    )
+  }
 }
 
 
