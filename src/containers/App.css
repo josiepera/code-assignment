@@ -11,16 +11,33 @@ body, html{
   font-family: 'Roboto', sans-serif;
 
 }
-h2{
+.page-title{
   margin: 20px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
+.page-title img{
+  width: 20px;;
+}
+
 hr{
   margin: 0px 80px;
   background-color: #dcdfe2;
 }
+.product-list{
+  /* position: absolute; */
+}
 .cart{
+  /* display: none; */
   margin: 20px 80px;
   border: solid black 2px;
+  /* position: fixed; */
+  /* left: 0; right: 0; top:0; bottom: 0; */
+  background-color: white;
+  /* width: 40%;
+  height: 70%; */
 }
 .container{
   display: flex;
