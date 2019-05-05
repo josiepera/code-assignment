@@ -5,23 +5,26 @@ import PropTypes from 'prop-types'
 import Product from '../components/Product'
 import './App.css';
 
-const App = () =>(
-  <div>
-    <div className="page-title">
-      <h2>Acme Store</h2>
-      <div className="shopping-cart">
-        <a href="#openCart"><img src="https://i.imgur.com/WYXwWfJ.png" alt="cart"/></a>
-        <CartContainer/>
-      </div>
-    </div>
+class App extends React.Component{
 
-    <hr/>
-    <ProductsContainer />
-    <hr/>
-  </div>
-)
+  render(){
+      return(
+        <div>
+          <div className="page-title">
+            <h2>Acme Store</h2>
+            <div className="shopping-cart">
+              <a href="#openCart"><img src="https://i.imgur.com/WYXwWfJ.png" alt="cart"/></a>
+              <CartContainer/>
+            </div>
+          </div>
 
-
+          <hr/>
+          <ProductsContainer />
+          <hr/>
+        </div>
+    )
+  }
+}
 
 
 
