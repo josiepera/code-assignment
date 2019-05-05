@@ -55,7 +55,26 @@ hr{
   margin: 10% auto;
   position: relative;
   background: #fff;
+  border-radius: 7px;
 }
+.cart > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart > div h3{
+  align-self: flex-start;
+  margin: 16px 40px;
+  font-size: 25px;
+}
+.cart > div hr{
+  width: 80%;
+  margin:0px 0px 20px 0px;
+}
+.cart > div img{
+  width: 10% !important;
+}
+
 .close{
   background: #606061;
   color: #FFFFFF;
@@ -161,6 +180,15 @@ a { color: inherit; }
     border-radius: 8px;
     width: 270px;
   }
+  .cart > div {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    background: #fff;
+    border-radius: 0px;
+  }
   hr{
     margin: 10px 20px;
   }
@@ -176,7 +204,7 @@ img{
 }
 
 .card-title{
-  /* width:80%; */
+  width:220px;;
   display: flex;
   align-items: center;
   justify-content: space-between;

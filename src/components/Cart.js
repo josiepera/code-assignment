@@ -23,6 +23,8 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
       <div>
         <a href="close" title="Close" className="close">X</a>
         <h3>Your Cart</h3>
+        <hr/>
+      
         <div>{nodes}</div>
         <p>Total: &#36;{total}</p>
         <button onClick={onCheckoutClicked}
