@@ -11,12 +11,16 @@ body, html{
   font-family: 'Roboto', sans-serif;
 
 }
-h2, h3{
+h2{
   margin: 20px 80px;
 }
 hr{
   margin: 0px 80px;
   background-color: #dcdfe2;
+}
+.cart{
+  margin: 20px 80px;
+  border: solid black 2px;
 }
 .container{
   display: flex;
@@ -94,8 +98,6 @@ button:focus {
 
 a { color: inherit; }
 
-
-
 @media screen and (max-width: 890px){
   .container{
     display: flex;
@@ -105,15 +107,11 @@ a { color: inherit; }
     /* padding:20px 50px; */
     padding:0px;
     border-radius: 8px;
-    width: 90%;
+    width: 270px;
   }
-  .product-container{
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-
-}
+  hr{
+    margin: 10px 20px;
+  }
 .product{
   display: flex;
   flex-direction: column;
@@ -133,9 +131,11 @@ img{
 }
 .card-title h4{
   margin: 10px 0px;
+  font-size: 20px;
 }
 .price{
   margin: 10px 0px;
+  font-size:15px;
 }
 .amount{
   margin: 10px 0px;
@@ -145,16 +145,16 @@ img{
   display: flex;
   flex-direction: column;
   align-self: center;
-  padding: 20px 40px;
+  padding: 20px 20px;
   background-color: white;
   border-radius: 5px;
-  /* width: 100%; */
+  width: 80%;
   margin: 10px 0px;
 }
 
 button{
   width: 100px;
-  border:1px solid black;
+  /* border:1px solid black; */
 }
 
 }
