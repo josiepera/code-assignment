@@ -29,12 +29,13 @@ hr{
 .product-list{
   /* position: absolute; */
 }
+
 .cart{
-  z-index: 99999;
+
+  /* z-index: 99999; */
   background: rgba(0,0,0,0.8);
-  opacity:0;
+  /* opacity:0; */
   transition: opacity 400ms ease-in;
-	pointer-events: none;
   /* display: none; */
   /* margin: 0 auto; */
   border: solid black 2px;
@@ -49,6 +50,7 @@ hr{
   pointer-events:auto;
 }
 .cart > div {
+  overflow: scroll;
   padding: 5px 20px 13px 20px;
   width: 40%;
   height: 70%;
@@ -72,27 +74,27 @@ hr{
   margin:0px 0px 20px 0px;
 }
 .cart > div img{
-  width: 10% !important;
+  width: 83px !important;
+  border-radius: 5px;
+  align-self: center;
 }
 
-.close{
-  background: #606061;
-  color: #FFFFFF;
-  line-height: 25px;
-  position: absolute;
-  right: -12px;
-  text-align: center;
-  top: -10px;
-  width: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
-  -moz-box-shadow: 1px 1px 3px #000;
-  -webkit-box-shadow: 1px 1px 3px #000;
-  box-shadow: 1px 1px 3px #000;
+.cart > div a{
+  margin:10px;
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 30px;
 }
+.cart .card-title{
+  width: 240px;
+}
+.shopping-cart img{
+  cursor: pointer;
+}
+.openCart{
+  overflow: scroll;
+}
+
 .container{
   display: flex;
   flex-direction: row;
@@ -157,6 +159,15 @@ button{
   padding: 4px 10px 4px 10px;
   cursor: pointer;
   text-decoration: none;
+  margin-bottom: 10px;
+}
+.nodes {
+  display: flex;
+  margin: 16px 40px;
+  flex-direction: column;
+}
+#nodeline{
+  width: 70%;
 }
 
 button:hover{
@@ -170,6 +181,19 @@ button:focus {
 a { color: inherit; }
 
 @media screen and (max-width: 890px){
+  .nodes{
+    margin: 16px 40px;
+  }
+  .products-cart{
+    margin-bottom:0px;
+    bottom: 0;
+    position: fixed;
+    border-radius: 0px;
+    width:100%;
+    height: 60px;
+    font-size: 25px;
+    border: none;
+  }
   .container{
     display: flex;
     flex-direction: column;
@@ -201,6 +225,13 @@ img{
   height: 100%;
   width: 100%;
   border-radius: 8px 8px 0px 0px;
+}
+.page-title{
+  margin: 20px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card-title{

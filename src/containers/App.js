@@ -6,15 +6,36 @@ import Product from '../components/Product'
 import './App.css';
 
 class App extends React.Component{
+  state={
+    showModal: false
+  }
+
+  handleShowMessageClick = () =>
+    this.setState({
+      showModal: true
+    })
+
+  handleCloseModal = () =>
+    this.setState({
+      showModal: false
+    })
 
   render(){
       return(
+
+
         <div>
           <div className="page-title">
             <h2>Acme Store</h2>
             <div className="shopping-cart">
-              <a href="#openCart"><img src="https://i.imgur.com/WYXwWfJ.png" alt="cart"/></a>
-              <CartContainer/>
+              <img src="https://i.imgur.com/WYXwWfJ.png" alt="cart" onClick={this.handleShowMessageClick}/>
+              {this.state.showModal ? (
+                <div className="modal">
+                  <CartContainer
+                  closeModal={this.handleCloseModal}
+                  />
+                </div>
+                ) : null}
             </div>
           </div>
 
