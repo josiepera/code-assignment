@@ -35,7 +35,7 @@ class App extends React.Component{
                   closeModal={this.handleCloseModal}
                   />
                 </div>
-                ) : null}
+              ) : ''}
             </div>
           </div>
 

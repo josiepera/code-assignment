@@ -29,6 +29,16 @@ hr{
 .product-list{
   /* position: absolute; */
 }
+.products-cart{
+  margin-bottom: 0px;
+  /* bottom: 0; */
+  /* position: fixed; */
+  border-radius: 0px;
+  width: 50%;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+}
 
 .cart{
 
@@ -80,6 +90,7 @@ hr{
 }
 
 .cart > div a{
+  color: #9fa5ad;
   margin:10px;
   cursor: pointer;
   align-self: flex-end;
