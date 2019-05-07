@@ -47,7 +47,8 @@ class Cart extends React.Component{
     )
 
   ) : (
-      <div>
+      <div className="empty-cart">
+        <img src="https://i.imgur.com/WYXwWfJ.png" alt="cart"/>
         <em>Please add some products to cart.</em>
       </div>
 

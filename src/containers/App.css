@@ -42,7 +42,7 @@ hr{
 
 .cart{
 
-  /* z-index: 99999; */
+  z-index: 99999;
   background: rgba(0,0,0,0.8);
   /* opacity:0; */
   transition: opacity 400ms ease-in;
@@ -96,6 +96,15 @@ hr{
   align-self: flex-end;
   font-size: 30px;
 }
+
+.empty-cart{
+  display:flex;
+  flex-direction: column;
+}
+.empty-cart img{
+  margin: 10px;
+}
+
 .cart .card-title{
   width: 190px;
 }
@@ -179,6 +188,10 @@ button{
   display: flex;
   font-size: 16px;
   border-radius: 20px;
+}
+.buttons button{
+  background-color:#d8d8d8;
+  color: black;
 }
 
 .subtract-button{
