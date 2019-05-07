@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
+import { addToCart } from '../actions'
 
 
 class Cart extends React.Component{
@@ -21,14 +22,14 @@ class Cart extends React.Component{
           key={product.id}
           inventory={product.inventory}
         />
+        {product.inventory > 0 ?(
         <button
           onClick={onAddToCartClicked}
           disabled={product.inventory > 0 ? '' : 'disabled'}
           >
           Add
-          {product.inventory > 0 ? 'Add' : 'Sold Out'}
-        </button>
-    
+        </button>)
+         : ''}
       </div>
     )
 

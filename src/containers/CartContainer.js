@@ -5,12 +5,13 @@ import { checkout } from '../actions'
 import { getTotal, getCartProducts } from '../reducers'
 import Cart from '../components/Cart'
 
-const CartContainer = ({ products, total, checkout, closeModal }) => (
+const CartContainer = ({ products, total, checkout, closeModal, addToCart }) => (
   <Cart
     products={products}
     total={total}
     onCheckoutClicked={() => checkout(products)}
     closeModal={() => closeModal()}
+    onAddToCartClicked={() => addToCart(products.id)}
     />
 )
 
@@ -23,7 +24,8 @@ CartContainer.propTypes = {
   })).isRequired,
   total: PropTypes.string,
   checkout: PropTypes.func.isRequired,
-  closeModal: PropTypes.func.isRequired
+  closeModal: PropTypes.func.isRequired,
+  addToCart: PropTypes.func.isRequired
 }
 
 const mapStateToProps = (state) => ({

@@ -21,9 +21,8 @@ class App extends React.Component{
     })
 
   render(){
+
       return(
-
-
         <div>
           <div className="page-title">
             <h2>Acme Store</h2>
@@ -55,7 +54,8 @@ App.propTypes = {
     title: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     inventory: PropTypes.number.isRequired
-  }).isRequired
+  }).isRequired,
+  products: React.PropTypes.array,
 }
 
 export default App

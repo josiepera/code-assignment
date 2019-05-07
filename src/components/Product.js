@@ -15,7 +15,7 @@ const Product = ({ image, price, inventory, title }) => (
         </div>
       </div>
       <div className="amount">
-       {inventory ? `${inventory} ` : null} Remaining
+       {inventory ? `${inventory} Remaining` : null} 
       </div>
 
     </div>
