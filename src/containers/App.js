@@ -21,13 +21,17 @@ class App extends React.Component{
     })
 
   render(){
-
+    const { product, inventory  } = this.props;
       return(
         <div>
           <div className="page-title">
             <h2>Acme Store</h2>
             <div className="shopping-cart">
-              <img src="https://i.imgur.com/WYXwWfJ.png" alt="cart" onClick={this.handleShowMessageClick}/>
+              <img
+                src="https://i.imgur.com/WYXwWfJ.png"
+                alt="cart"
+                onClick={this.handleShowMessageClick}
+              />
               {this.state.showModal ? (
                 <div className="modal">
                   <CartContainer

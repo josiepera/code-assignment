@@ -24,7 +24,7 @@ class Cart extends React.Component{
           />
         </div>
         <h6>Remove</h6>
-        { product.inventory > 0 ?(
+        { product.inventory > 0 ? (
         <div className="buttons">
           <button
             className="subtract-button"

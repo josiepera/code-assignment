@@ -43,7 +43,7 @@ hr{
 .cart{
 
   z-index: 99999;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.75);
   /* opacity:0; */
   transition: opacity 400ms ease-in;
   /* display: none; */
