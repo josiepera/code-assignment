@@ -97,7 +97,7 @@ hr{
   font-size: 30px;
 }
 .cart .card-title{
-  width: 240px;
+  width: 110%;
 }
 .shopping-cart img{
   cursor: pointer;
@@ -133,6 +133,7 @@ hr{
 .product{
   display: flex;
   flex-direction: column;
+  margin: 0px 10px;
 }
 
 img{
@@ -170,15 +171,36 @@ button{
   padding: 4px 10px 4px 10px;
   cursor: pointer;
   text-decoration: none;
-  margin-bottom: 10px;
+  margin: 10px;
+}
+.buttons{
+  display: flex;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.subtract-button{
+  border-radius: 20px 0px 0px 20px;
+  font-size: 20px;
+}
+.add-button{
+  border-radius: 0px 20px 20px 0px;
+  font-size: 20px;
 }
 .nodes {
+  padding: 16px 0px;
   display: flex;
-  margin: 16px 40px;
+  align-items: center;
   flex-direction: column;
+  border-bottom: 1px solid #dcdfe2;
 }
-#nodeline{
-  width: 70%;
+
+
+.nodes > div:first-child{
+  display:flex;
+}
+.products > div:first-child{
+
 }
 
 button:hover{
@@ -192,11 +214,17 @@ button:focus {
 a { color: inherit; }
 
 @media screen and (max-width: 890px){
+  .cart > div hr {
+    width: 90%;
+    margin: 0px 0px 20px 0px;
+  }
   .nodes{
     margin: 16px 40px;
+    display: flex;
+    flex-direction: column;
   }
   .products-cart{
-    margin-bottom:0px;
+    margin: 10px 0px 0px 0px;
     bottom: 0;
     position: fixed;
     border-radius: 0px;

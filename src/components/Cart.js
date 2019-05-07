@@ -14,21 +14,34 @@ class Cart extends React.Component{
     const nodes = hasProducts ? (
       products.map(product =>
       <div className="nodes">
-        <img src={product.image} alt={title}/>
-        <Product
-          title={product.title}
-          price={product.price}
-          quantity={product.quantity}
-          key={product.id}
-          inventory={product.inventory}
-        />
-        {product.inventory > 0 ?(
-        <button
-          onClick={onAddToCartClicked}
-          disabled={product.inventory > 0 ? '' : 'disabled'}
-          >
-          Add
-        </button>)
+        <div>
+          <img src={product.image} alt={title}/>
+          <Product
+            title={product.title}
+            price={product.price}
+            quantity={product.quantity}
+            key={product.id}
+            inventory={product.inventory}
+          />
+        </div>
+        { product.inventory > 0 ?(
+        <div className="buttons">
+          <button
+            className="subtract-button"
+            onClick={onAddToCartClicked}
+            disabled={product.inventory > 0 ? '' : 'disabled'}
+            >
+            -
+          </button> <p>{product.inventory}</p>
+          <button
+            className="add-button"
+            onClick={onAddToCartClicked}
+            disabled={product.inventory > 0 ? '' : 'disabled'}
+            >
+            +
+          </button>
+        </div>
+      )
          : ''}
       </div>
     )
