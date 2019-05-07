@@ -7,7 +7,7 @@
 - I named the divs with classnames so it would be easier to select in the css file
 - The cart modal started out as CSS and HTML but quickly realized that this method changed the state of the cart so I changed both the App and Cart components into class components in order to use conditional rendering
 - I was able to build the modal by using conditional rendering to the CartContainer then passing props to the CartContainer then passing to Cart component. Within the cart, the user clicks on the "x" to change the state back to false thus closing the modal.
-- The modal definitly took the longest but I was able to figure out that the best mthod for this is through conditional rendering and changing to the closed state by passing to the grandchild component.
+- The modal took the longest but I was able to figure out that the best method for this is through conditional rendering and changing to the "closed" state by passing to the grandchild component.
 - Below is the code snippet of how the "Add to Cart" button changes when the product is sold out
 - If the product inventory is greater than 0, then the opacity of the button is .5
 ```
