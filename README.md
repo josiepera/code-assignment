@@ -1,4 +1,6 @@
 # Process of Building
+Deployed Version: http://dispensable-profit.surge.sh/
+
 - I created the CSS file in the containers folder in order to make it easier to traverse when importing the file.  
 - When it comes to the fonts, I used google fonts and chose the fonts closest to the sketch
 - I created it mobile first because now websites are mostly used on mobile and it is a lot easier to start mobile then move into the desktop version
