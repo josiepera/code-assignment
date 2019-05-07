@@ -85,7 +85,7 @@ hr{
 }
 .cart > div img{
   width: 83px !important;
-  border-radius: 5px;
+  border-radius: 0px;
   align-self: center;
 }
 
@@ -107,12 +107,20 @@ hr{
 
 .cart .card-title{
   width: 190px;
+  width: 190px;
+  display: flex;
+  flex-direction: column;
 }
 .shopping-cart img{
   cursor: pointer;
 }
 .openCart{
   overflow: scroll;
+}
+
+h6{
+  margin: 0px 0px 10px 0px;
+  color:red;
 }
 
 .container{
@@ -153,7 +161,7 @@ img{
 .card-title{
   /* width:80%; */
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   width: 100%;
 }
@@ -291,11 +299,11 @@ img{
 .card-title{
   /* width:220px;; */
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
 }
 .card-title h4{
-  margin: 10px 0px;
+  margin: 0px;
   font-size: 20px;
 }
 .price{
@@ -315,6 +323,9 @@ img{
   border-radius: 5px;
   width: 80%;
   margin: 10px 0px;
+}
+#total{
+  margin-bottom: 100px;
 }
 
 button{

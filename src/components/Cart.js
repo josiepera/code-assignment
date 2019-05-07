@@ -21,9 +21,9 @@ class Cart extends React.Component{
             price={product.price}
             quantity={product.quantity}
             key={product.id}
-            inventory={product.inventory}
           />
         </div>
+        <h6>Remove</h6>
         { product.inventory > 0 ?(
         <div className="buttons">
           <button
@@ -65,7 +65,7 @@ class Cart extends React.Component{
 
           <div>{nodes}</div>
 
-          <p>Total: &#36;{total}</p>
+          <p id="total">Total: &#36;{total}</p>
 
           <button
             className="products-cart"
