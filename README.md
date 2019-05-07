@@ -4,7 +4,7 @@
 - I created it mobile first because now websites are mostly used on mobile and it is a lot easier to start mobile then move into the desktop version
 - Each product box is adaptable in order to adjust to the desktop view and tablet view, the mobile view is responsive
 - I styled the buttons from Sketch but found it easier to use images from the net until I can import and resize images from Sketch
-- I renamed the divs so it would be easier to name in the css file
+- I named the divs with classnames so it would be easier to select in the css file
 - The cart modal started out as CSS and HTML but quickly realized that this method changed the state of the cart so I changed both the App and Cart components into class components in order to use conditional rendering
 - I was able to build the modal by using conditional rendering to the CartContainer then passing props to the CartContainer then passing to Cart component. Within the cart, the user clicks on the "x" to change the state back to false thus closing the modal.
 - The modal definitly took the longest but I was able to figure out that the best mthod for this is through conditional rendering and changing to the closed state by passing to the grandchild component.

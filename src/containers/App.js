@@ -31,7 +31,7 @@ class App extends React.Component{
                 src="https://i.imgur.com/WYXwWfJ.png"
                 alt="cart"
                 onClick={this.handleShowMessageClick}
-              />
+              /> 
               {this.state.showModal ? (
                 <div className="modal">
                   <CartContainer

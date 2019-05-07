@@ -12,14 +12,14 @@ body, html{
 
 }
 .page-title{
-  margin: 20px 80px;
+  margin: 0 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 .page-title img{
-  width: 20px;;
+  width: 30px;
 }
 
 hr{
@@ -112,8 +112,15 @@ hr{
   flex-direction: column;
 }
 .shopping-cart img{
+  margin:0px 10px;
   cursor: pointer;
 }
+.shopping-cart{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
 .openCart{
   overflow: scroll;
 }
@@ -289,7 +296,7 @@ img{
   border-radius: 8px 8px 0px 0px;
 }
 .page-title{
-  margin: 20px 80px;
+  margin: 0px 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
