@@ -1,3 +1,13 @@
+# Process of Building
+- I created the CSS file in the containers folder in order to make it easier to traverse when importing the file.  
+- When it comes to the fonts, I used google fonts and chose the fonts closest to the sketch
+- I created it mobile first because now websites are mostly used on mobile and it is a lot easier to start mobile then move into the desktop version
+- Each product box is adaptable in order to adjust to the desktop view and tablet view, the mobile view is responsive
+- I styled the buttons from Sketch but found it easier to use images from the net until I can import and resize images from Sketch
+- I renamed the divs so it would be easier to name in the css file
+- The cart modal started out as CSS and HTML but quickly realized that this method changed the state of the cart so I changed both the App and Cart components into class components in order to use conditional rendering
+
+
 # Work & Co Web Code Assessment
 
 This is a copy of the [Redux Shopping Cart Example](https://github.com/reactjs/redux/tree/master/examples/shopping-cart).
