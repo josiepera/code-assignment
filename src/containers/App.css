@@ -97,7 +97,7 @@ hr{
   font-size: 30px;
 }
 .cart .card-title{
-  width: 110%;
+  width: 190px;
 }
 .shopping-cart img{
   cursor: pointer;
@@ -151,15 +151,17 @@ img{
 .card-title h4{
   margin: 10px 0px;
   color: #505050;
-  font-size: 25px;
+  font-size: 18px;
 }
 .price{
   margin: 10px 0px;
   color:#898a8e;
+  font-size: 15px;
 }
 .amount{
   margin: 10px 0px;
   color:#898a8e;
+  font-size: 15px;
 }
 
 
@@ -274,7 +276,7 @@ img{
 }
 
 .card-title{
-  width:220px;;
+  /* width:220px;; */
   display: flex;
   align-items: center;
   justify-content: space-between;
